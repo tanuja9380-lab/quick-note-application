@@ -1,0 +1,13 @@
+{
+  "name": "quick-note-application",
+  "version": "1.0.0",
+  "description": "Single-page full-stack note-taking app using Node.js, Express and HTML/CSS/JavaScript.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Note</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">FULL-STACK NOTES</p>
+        <h1>Quick Note</h1>
+        <p class="subtitle">Capture your thoughts quickly and keep them organized.</p>
+      </div>
+      <span class="status">● API Ready</span>
+    </header>
+
+    <section class="card composer">
+      <h2>Create a Note</h2>
+
+      <form id="noteForm">
+        <label for="title">Title</label>
+        <input
+          id="title"
+          name="title"
+          type="text"
+          placeholder="e.g. Ideas for my project"
+          maxlength="100"
+          required
+        />
+
+        <label for="content">Note</label>
+        <textarea
+          id="content"
+          name="content"
+          placeholder="Write your note here..."
+          rows="6"
+          maxlength="1000"
+          required
+        ></textarea>
+
+        <button type="submit" id="saveBtn">Save Note</button>
+        <p id="message" class="message"></p>
+      </form>
+    </section>
+
+    <section class="notes-section">
+      <div class="section-heading">
+        <h2>My Notes</h2>
+        <span id="noteCount">0 notes</span>
+      </div>
+
+      <div id="notesContainer" class="notes-grid">
+        <p class="empty">Loading notes...</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
