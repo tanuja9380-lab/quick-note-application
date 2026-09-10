@@ -97,6 +97,6 @@ app.get("*", (req, res) => {
 
 ensureDataFile();
 
-app.listen(PORT, () => {
-  console.log(`Quick Note Application running at http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Quick Note Application running on port ${PORT}`);
 });
